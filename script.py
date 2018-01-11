@@ -12,7 +12,7 @@ import sys
 ips=['192.168.40.181','192.168.40.180','192.168.40.182','192.168.40.187']
 port=22
 username="root"
-password="123123"
+password="####"
 command_status = "ps aux |grep tomcat | grep -v grep | wc -l"
 command_start = '/usr/local/tomcat/bin/startup.sh'
 command_stop = '/usr/local/tomcat/bin/shutdown.sh'
@@ -161,7 +161,8 @@ def restart(ip):
 #		thread_list[i].start()
 
 
-for ip in ips:
+def main():
+	for ip in ips:
 	if argv[1] == 'start':
 		startup(ip)
 	if argv[1] == 'stop':
@@ -169,4 +170,6 @@ for ip in ips:
 	if argv[1] == 'restart':
 		restart(ip)
 
-#	main()
+if __name__ == '__main__':
+	main()
+

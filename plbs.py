@@ -5,7 +5,7 @@ ips=['192.168.40.181','192.168.40.180','192.168.40.182','192.168.40.187']
 command_rm= 'rm -rf /usr/local/tomcat/webapps/*'
 port=22
 username="root"
-password="123123"
+password="####"
 
 def connect(ip):
 	s=paramiko.SSHClient() 

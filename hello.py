@@ -16,4 +16,4 @@ def sys_version(ipaddress, user, password):
  
  
 if __name__ == '__main__':
-    sys_version(ipaddress="192.168.40.180", user="administrator", password="zzsdzfp@123456")
+    sys_version(ipaddress="192.168.40.180", user="administrator", password="####")
